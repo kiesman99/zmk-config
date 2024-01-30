@@ -45,7 +45,7 @@
 
         COLEMAK {
             bindings = <
-&trans  &kp Q        &kp W           &kp F       &kp P         &kp B     &kp J   &kp L         &kp U       &kp Y       &kp Q        &trans
+&trans  &kp Q        &kp W           &kp F       &kp P         &kp B     &kp J   &kp L         &kp U       &kp Y       &kp SQT      &trans
 &trans  &mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T  &kp G     &kp M   &mt RSHIFT N  &mt RGUI E  &mt RALT I  &mt RCTRL O  &trans
 &trans  &kp Z        &kp X           &kp C       &kp D         &kp V     &kp K   &kp H         &kp COMMA   &kp DOT     &kp SLASH    &trans
                                      &trans      &trans        &trans    &trans  &trans        &trans
@@ -111,10 +111,10 @@
 
         Symbol {
             bindings = <
-&trans  &trans         &kp AT_SIGN       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans                &trans                 &trans             &trans  &trans  &trans
+&trans  &kp AT_SIGN    &kp EXCLAMATION   &kp EQUAL  &kp LEFT_PARENTHESIS  &kp EXCLAMATION      &trans  &kp SQT  &trans  &trans  &trans  &trans
+&trans  &trans         &kp SEMICOLON     &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE      &trans  &trans   &trans  &trans  &trans  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &trans  &trans   &trans  &trans  &trans  &trans
+                                         &trans     &trans                &trans               &trans  &trans   &trans
             >;
         };
     };
