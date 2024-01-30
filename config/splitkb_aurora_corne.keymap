@@ -3,6 +3,28 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_rect_max {
+            bindings = <&kp LC(LA(ENTER))>;
+            key-positions = <15>;
+            layers = <6>;
+        };
+
+        combo_rect_right {
+            bindings = <&kp LC(LA(RIGHT))>;
+            key-positions = <16>;
+            layers = <6>;
+        };
+
+        combo_rect_left {
+            bindings = <&kp LC(LA(LEFT))>;
+            key-positions = <14>;
+            layers = <6>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -14,10 +36,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&tog 1         &kp Q               &kp W           &kp E           &kp R             &kp T      &kp Y    &kp U              &kp I            &kp O            &kp P                &kp BSPC
-&kp LG(SPACE)  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &kp H    &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z               &kp X           &kp C           &kp V             &kp B      &kp N    &kp M              &kp COMMA        &kp DOT          &kp FSLH             &kp ESC
-                                                   &kp ESCAPE      &lt 6 SPACE       &kp TAB    &kp RET  &lt 4 BACKSPACE    &lt 5 DEL
+&tog 1         &kp Q               &kp W           &kp E           &kp R             &kp T      &kp Y        &kp U              &kp I            &kp O            &kp P                &kp BSPC
+&kp LG(SPACE)  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
+&kp LSHFT      &kp Z               &kp X           &kp C           &kp V             &kp B      &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH             &kp ESC
+                                                   &kp ESCAPE      &lt 6 SPACE       &kp TAB    &lt 7 ENTER  &lt 4 BACKSPACE    &lt 5 DEL
             >;
         };
 
@@ -84,6 +106,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &trans     &trans  &trans
                         &trans  &trans  &trans    &trans    &trans    &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&trans  &trans         &kp AT_SIGN       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans                &trans                 &trans             &trans  &trans  &trans
             >;
         };
     };
