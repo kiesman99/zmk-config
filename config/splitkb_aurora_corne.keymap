@@ -102,10 +102,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans                    &trans  &trans  &trans  &trans  &trans    &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(Z)  &kp LG(LS(Z))  &kp LC(LG(Q))
+&trans                    &trans  &trans  &trans  &trans  &trans    &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans         &trans
+&kp LS(LG(LC(NUMBER_4)))  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans        &trans     &trans         &trans
+                                          &trans  &trans  &trans    &trans     &trans     &trans
             >;
         };
 
