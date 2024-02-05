@@ -115,10 +115,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp AT_SIGN    &kp EXCLAMATION   &kp EQUAL  &kp LEFT_PARENTHESIS  &kp EXCLAMATION      &trans  &kp SQT  &trans  &trans  &trans  &trans
-&trans  &trans         &kp SEMICOLON     &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE      &trans  &trans   &trans  &trans  &trans  &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &trans  &trans   &trans  &trans  &trans  &trans
-                                         &trans     &trans                &trans               &trans  &trans   &trans
+&trans  &kp SQT                 &kp LESS_THAN    &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND  &none                   &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp PERCENT          &trans
+&trans  &hrt LCTRL EXCLAMATION  &hrt LALT MINUS  &hrt LGUI PLUS    &hrt LEFT_SHIFT EQUAL  &kp HASH      &kp PIPE       &hrt RIGHT_SHIFT COLON  &hrt RGUI LEFT_PARENTHESIS  &hrt RALT RIGHT_PARENTHESIS  &hrt RCTRL QUESTION  &trans
+&trans  &kp CARET               &kp SLASH        &kp ASTERISK      &kp BSLH               &none         &kp TILDE      &kp DOLLAR              &kp LEFT_BRACE              &kp RIGHT_BRACE              &kp AT_SIGN          &trans
+                                                 &trans            &trans                 &trans        &trans         &trans                  &trans
             >;
         };
     };
