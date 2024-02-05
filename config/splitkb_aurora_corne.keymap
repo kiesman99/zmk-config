@@ -9,19 +9,33 @@
         combo_rect_max {
             bindings = <&kp LC(LA(ENTER))>;
             key-positions = <15>;
-            layers = <6>;
+            layers = <5>;
         };
 
         combo_rect_right {
             bindings = <&kp LC(LA(RIGHT))>;
             key-positions = <16>;
-            layers = <6>;
+            layers = <5>;
         };
 
         combo_rect_left {
             bindings = <&kp LC(LA(LEFT))>;
             key-positions = <14>;
-            layers = <6>;
+            layers = <5>;
+        };
+    };
+
+    behaviors {
+        hrt: hrt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
         };
     };
 
@@ -36,19 +50,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&tog 1         &kp Q               &kp W           &kp E           &kp R             &kp T      &kp Y        &kp U              &kp I            &kp O            &kp P                &kp BSPC
-&kp LG(SPACE)  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z               &kp X           &kp C           &kp V             &kp B      &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH             &kp ESC
-                                                   &kp ESCAPE      &lt 6 SPACE       &kp TAB    &lt 7 ENTER  &lt 4 BACKSPACE    &lt 5 DEL
-            >;
-        };
-
-        COLEMAK {
-            bindings = <
-&trans  &kp Q        &kp W           &kp F       &kp P         &kp B     &kp J   &kp L         &kp U       &kp Y       &kp SQT      &trans
-&trans  &mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T  &kp G     &kp M   &mt RSHIFT N  &mt RGUI E  &mt RALT I  &mt RCTRL O  &trans
-&trans  &kp Z        &kp X           &kp C       &kp D         &kp V     &kp K   &kp H         &kp COMMA   &kp DOT     &kp SLASH    &trans
-                                     &trans      &trans        &trans    &trans  &trans        &trans
+&kp ESCAPE     &kp Q                &kp W           &kp E           &kp R             &kp T      &kp Y        &kp U              &kp I            &kp O            &kp SQT              &kp BSPC
+&kp LG(SPACE)  &hrt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
+&kp LSHFT      &kp Z                &kp X           &kp C           &kp V             &kp B      &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH             &kp ESC
+                                                    &kp ESCAPE      &lt 5 SPACE       &kp TAB    &lt 6 ENTER  &lt 3 BACKSPACE    &lt 4 DEL
             >;
         };
 
