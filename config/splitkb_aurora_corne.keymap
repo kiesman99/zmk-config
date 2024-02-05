@@ -8,19 +8,19 @@
 
         combo_rect_max {
             bindings = <&kp LC(LA(ENTER))>;
-            key-positions = <15>;
+            key-positions = <3>;
             layers = <5>;
         };
 
         combo_rect_right {
             bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <16>;
+            key-positions = <4>;
             layers = <5>;
         };
 
         combo_rect_left {
             bindings = <&kp LC(LA(LEFT))>;
-            key-positions = <14>;
+            key-positions = <2>;
             layers = <5>;
         };
     };
