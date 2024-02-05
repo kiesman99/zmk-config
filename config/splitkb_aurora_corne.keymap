@@ -32,10 +32,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
-            hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
         };
     };
 
@@ -50,9 +49,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q                &kp W            &kp F            &kp P              &kp B      &kp J        &kp L               &kp U             &kp Y             &kp SQT               &kp BSPC
-&kp LG(SPACE)  &hrt LEFT_CONTROL A  &hrt LEFT_ALT R  &hrt LEFT_GUI S  &hrt LEFT_SHIFT T  &kp G      &kp H        &hrt RIGHT_SHIFT N  &hrt RIGHT_GUI E  &hrt RIGHT_ALT I  &hrt RCTRL O          &kp SQT
-&kp LSHFT      &kp Z                &kp X            &kp C            &kp D              &kp V      &kp K        &kp H               &kp COMMA         &kp DOT           &kp FSLH              &kp ESC
+&kp ESCAPE     &kp Q                &kp W            &kp F            &kp P              &kp B      &kp J        &kp L               &kp U             &kp Y             &kp SQT       &kp BSPC
+&kp LG(SPACE)  &hrt LEFT_CONTROL A  &hrt LEFT_ALT R  &hrt LEFT_GUI S  &hrt LEFT_SHIFT T  &kp G      &kp H        &hrt RIGHT_SHIFT N  &hrt RIGHT_GUI E  &hrt RIGHT_ALT I  &hrt RCTRL O  &kp SQT
+&kp LSHFT      &kp Z                &kp X            &kp C            &kp D              &kp V      &kp K        &kp H               &kp COMMA         &kp DOT           &kp FSLH      &kp ESC
                                                      &kp ESCAPE       &lt 5 SPACE        &kp TAB    &lt 6 ENTER  &lt 3 BACKSPACE     &lt 4 DEL
             >;
         };
