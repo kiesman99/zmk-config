@@ -38,6 +38,15 @@
         };
     };
 
+    macros {
+        closeHtml: closeHtml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp GT>;
+            label = "CLOSEHTML";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q                &kp W            &kp F            &kp P              &kp B      &kp J        &kp L               &kp U             &kp Y             &kp SQT       &kp BSPC
-&kp LG(SPACE)  &hrt LEFT_CONTROL A  &hrt LEFT_ALT R  &hrt LEFT_GUI S  &hrt LEFT_SHIFT T  &kp G      &kp M        &hrt RIGHT_SHIFT N  &hrt RIGHT_GUI E  &hrt RIGHT_ALT I  &hrt RCTRL O  &kp SQT
-&kp LSHFT      &kp Z                &kp X            &kp C            &kp D              &kp V      &kp K        &kp H               &kp COMMA         &kp DOT           &kp FSLH      &kp ESC
-                                                     &kp ESCAPE       &lt 5 SPACE        &kp TAB    &lt 6 ENTER  &lt 3 BACKSPACE     &lt 4 DEL
+&kp ESCAPE     &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J            &kp L               &kp U             &kp Y             &kp SQT       &kp BSPC
+&kp LG(SPACE)  &hrt LEFT_CONTROL A  &hrt LEFT_ALT R  &hrt LEFT_GUI S  &hrt LEFT_SHIFT T  &kp G        &kp M            &hrt RIGHT_SHIFT N  &hrt RIGHT_GUI E  &hrt RIGHT_ALT I  &hrt RCTRL O  &kp SQT
+&kp LSHFT      &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K            &kp H               &kp COMMA         &kp DOT           &kp FSLH      &kp ESC
+                                                     &lt 7 ESCAPE     &lt 5 SPACE        &lt 6 TAB    &lt 6 BACKSPACE  &lt 3 ENTER         &lt 4 DEL
             >;
         };
 
@@ -115,10 +124,19 @@
 
         Symbol {
             bindings = <
-&trans  &kp SQT                 &kp LESS_THAN    &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND  &none                   &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp PERCENT          &trans
+&trans  &kp SQT                 &kp LESS_THAN    &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND  &kp SEMICOLON           &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp PERCENT          &trans
 &trans  &hrt LCTRL EXCLAMATION  &hrt LALT MINUS  &hrt LGUI PLUS    &hrt LEFT_SHIFT EQUAL  &kp HASH      &kp PIPE       &hrt RIGHT_SHIFT COLON  &hrt RGUI LEFT_PARENTHESIS  &hrt RALT RIGHT_PARENTHESIS  &hrt RCTRL QUESTION  &trans
-&trans  &kp CARET               &kp SLASH        &kp ASTERISK      &kp BSLH               &none         &kp TILDE      &kp DOLLAR              &kp LEFT_BRACE              &kp RIGHT_BRACE              &kp AT_SIGN          &trans
+&trans  &kp CARET               &kp SLASH        &kp ASTERISK      &kp BSLH               &closeHtml    &kp TILDE      &kp DOLLAR              &kp LEFT_BRACE              &kp RIGHT_BRACE              &kp AT_SIGN          &trans
                                                  &trans            &trans                 &trans        &trans         &trans                  &trans
+            >;
+        };
+
+        Music {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans    &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_PP  &kp C_VOL_UP  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans    &trans        &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans             &trans
             >;
         };
     };
