@@ -61,7 +61,7 @@
 &kp ESCAPE     &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J        &kp L               &kp U             &kp Y             &kp SQT       &kp BSPC
 &kp LG(SPACE)  &hrt LEFT_CONTROL A  &hrt LEFT_ALT R  &hrt LEFT_GUI S  &hrt LEFT_SHIFT T  &kp G        &kp M        &hrt RIGHT_SHIFT N  &hrt RIGHT_GUI E  &hrt RIGHT_ALT I  &hrt RCTRL O  &kp SQT
 &kp LSHFT      &kp Z                &kp X            &kp C            &kp D              &kp V        &kp K        &kp H               &kp COMMA         &kp DOT           &kp FSLH      &kp ESC
-                                                     &lt 7 ESCAPE     &lt 5 SPACE        &lt 6 TAB    &lt 6 ENTER  &lt 3 BACKSPACE     &lt 4 DEL
+                                                     &lt 7 ESCAPE     &lt 5 SPACE        &lt 6 TAB    &lt 3 ENTER  &lt 6 BACKSPACE     &lt 4 DEL
             >;
         };
 
