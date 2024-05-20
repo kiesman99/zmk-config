@@ -94,10 +94,10 @@
 
         Navigation {
             bindings = <
-&trans                    &trans  &trans  &trans     &trans     &trans       &none               &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP  &none          &none
-&trans                    &trans  &trans  &trans     &trans     &trans       &kp LA(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp LA(RIGHT)  &trans
-&kp LS(LG(LC(NUMBER_4)))  &trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)    &trans              &trans          &trans        &trans       &trans         &trans
-                                          &trans     &trans     &trans       &trans              &trans          &trans
+&trans                    &trans  &trans  &kp LG(X)      &kp LG(C)  &kp LG(V)    &none               &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP  &none          &none
+&trans                    &trans  &trans  &kp LS(LG(Z))  &kp LG(Z)  &trans       &kp LA(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp LA(RIGHT)  &trans
+&kp LS(LG(LC(NUMBER_4)))  &trans  &trans  &kp LG(X)      &kp LG(C)  &kp LG(V)    &trans              &trans          &trans        &trans       &trans         &trans
+                                          &trans         &trans     &trans       &trans              &trans          &trans
             >;
         };
 
