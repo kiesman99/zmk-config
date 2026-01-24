@@ -7,21 +7,6 @@
         compatible = "zmk,combos";
 
         /* Rectangle / window management combos on Layer 6 (DevNumRow) */
-
-        combo_rect_max {
-            bindings = <&kp LC(LA(ENTER))>;
-            key-positions = <3>;
-        };
-
-        combo_rect_right {
-            bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <4>;
-        };
-
-        combo_rect_left {
-            bindings = <&kp LC(LA(LEFT))>;
-            key-positions = <2>;
-        };
     };
 
     behaviors {
